@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Rental Management</title>
+    <link rel="stylesheet" href="/static/styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Equipment Rental Management</h1>
+        <div class="form-container">
+            <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+            <input type="text" id="equipmentType" placeholder="Equipment Type" required>
+            <input type="number" id="equipmentQuantity" placeholder="Quantity" required>
+            <input type="number" id="equipmentPrice" placeholder="Price per Day" required>
+            <button onclick="addEquipment()">Add Equipment</button>
+        </div>
+        
+        <h2>Equipment List</h2>
+        <table id="equipmentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Price per Day</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Equipment records will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/static/script2.js"></script>
+</body>
+</html>

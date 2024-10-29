@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labor Registration</title>
+    <link rel="stylesheet" href="/static/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Labor Registration</h1>
+        <div class="form-container">
+            <input type="text" id="laborName" placeholder="Name" required>
+            <input type="number" id="laborAge" placeholder="Age" required>
+            <input type="text" id="laborContact" placeholder="Contact No" required>
+            <input type="text" id="laborAddress" placeholder="Address" required>
+            <button onclick="addLabor()">Add Labor</button>
+        </div>
+        
+        <h2>Labor List</h2>
+        <table id="laborTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Contact No</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Labor records will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/static/script1.js"></script>
+</body>
+</html>

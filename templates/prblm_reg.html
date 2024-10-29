@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Problem Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prblm_reg.css') }}">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Register Your Problem</h1>
+    <form action="{{ url_for('register_problem') }}" method="POST" id="problemFor">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Contact (Email or Phone):</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="crop">Crop Type:</label>
+        <input type="text" id="crop" name="crop">
+
+        <label for="issue">Problem/Issue:</label>
+        <textarea id="issue" name="issue" rows="4" required></textarea>
+
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+
+        <button type="submit">Submit </button>
+    </form>
+    <div id="confirmationMessage" class="hidden">Your problem has been registered successfully!</div>
+  </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
