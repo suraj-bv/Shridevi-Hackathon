@@ -19,7 +19,6 @@ body {
     color: white;
     padding: 30px; /* Increased padding for a larger banner */
     border-radius: 5px;
-    position: relative;
     width: 100%; /* Full width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
