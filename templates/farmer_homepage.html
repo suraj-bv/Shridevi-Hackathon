@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Farmer Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Farmer Dashboard</h1>
+            <div class="user-info">
+                <h2>Hello, {{ username }}</h2>
+                <a href="" class="logout-button">Logout</a>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card" onclick="location.href='/government_schemes'">
+                <h2>Government Schemes</h2>
+                <p>Find and apply for various government schemes available for farmers.</p>
+                <a href="/government_schemes" class="card-button">Go to Schemes</a>
+            </div>
+            <div class="card" onclick="location.href='/problem_registration'">
+                <h2>Problem Registration</h2>
+                <p>Report farming-related issues and get assistance.</p>
+                <a href="/problem_registration" class="card-button">Register a Problem</a>
+            </div>
+            <div class="card" onclick="location.href='/soil_testing_borewell'">
+                <h2>Soil Testing & Borewell Pointing</h2>
+                <p>Register for soil testing and borewell pointing services.</p>
+                <a href="/soil_testing_borewell" class="card-button">Register Now</a>
+            </div>
+            <div class="card" onclick="location.href='/equipment_rentals'">
+                <h2>Farming Equipment Rentals</h2>
+                <p>Rent various farming equipment at affordable rates.</p>
+                <a href="/equipment_rentals" class="card-button">View Rentals</a>
+            </div>
+            <div class="card" onclick="location.href='/labor_availability'">
+                <h2>Labor Availability</h2>
+                <p>Check available laborers for your farming needs.</p>
+                <a href="/labor_availability" class="card-button">Find Labor</a>
+            </div>
+            <div class="card" onclick="location.href='/apmc_prices'">
+                <h2>APMC Price Showing</h2>
+                <p>View current prices at APMC markets.</p>
+                <a href="/apmc_prices" class="card-button">Check Prices</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

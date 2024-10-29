@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.role-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#signupPrompt {
+    text-align: center;
+    margin-top: 10px;
+}
