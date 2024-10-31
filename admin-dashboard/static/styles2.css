@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+td button:hover {
+    background-color: #c82333;
+}

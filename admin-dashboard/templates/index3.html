@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes Management</title>
+    <link rel="stylesheet" href="/static/styles3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Government Schemes Management</h1>
+        <div class="form-container">
+            <input type="text" id="schemeName" placeholder="Scheme Name" required>
+            <input type="text" id="schemeDescription" placeholder="Description" required>
+            <input type="text" id="schemeApplyLink" placeholder="Apply Link" required>
+            <input type="text" id="schemeEligibility" placeholder="Eligibility Criteria" required>
+            <button onclick="addScheme()">Add Scheme</button>
+        </div>
+        
+        <h2>Schemes List</h2>
+        <table id="schemesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Apply Link</th>
+                    <th>Eligibility Criteria</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Scheme records will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/static/script3.js"></script>
+</body>
+</html>
